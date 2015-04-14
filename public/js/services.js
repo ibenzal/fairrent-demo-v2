@@ -4,7 +4,7 @@
 
 angular.module('fairRentApp.services',[]).factory('Flat',function($resource){
     //return $resource('http://fairrent.azurewebsites.net/flat/:id',{id:'@_id'},{
-    return $resource('https://fairrent-demo-v2.herokuapp.com/flat/:id', { id: '@_id' }, {
+    return $resource('http://fairrent-demo-v2.herokuapp.com/flat/:id', { id: '@_id' }, {
         update: {
             method: 'PUT'
         }
