@@ -7,19 +7,19 @@ angular.module('fairRentApp',['ui.router','ngResource','fairRentApp.controllers'
 angular.module('fairRentApp').config(function($stateProvider,$httpProvider){
     $stateProvider.state('Flats', {
         url: '/Flats',
-        templateUrl: 'partials/Flats.html',
+        templateUrl: 'partials/flats.html',
         controller: 'FlatListController'
     }).state('viewFlat', {
         url: '/Flats/:id/view',
-        templateUrl: 'partials/Flat-view.html',
+        templateUrl: 'partials/flat-view.html',
         controller: 'FlatViewController'
     }).state('newFlat', {
         url: '/Flats/new',
-        templateUrl: 'partials/Flat-add.html',
+        templateUrl: 'partials/flat-add.html',
         controller: 'FlatCreateController'
     }).state('editFlat', {
         url: '/Flats/:id/edit',
-        templateUrl: 'partials/Flat-edit.html',
+        templateUrl: 'partials/flat-edit.html',
         controller: 'FlatEditController'
     });
 }).run(function($state){
