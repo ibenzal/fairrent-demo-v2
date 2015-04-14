@@ -1,4 +1,4 @@
-var Flat = require('../models/Flat.js');
+var Flat = require('../models/flat.js');
 
 module.exports = function(app) {
 
