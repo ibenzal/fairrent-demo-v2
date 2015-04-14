@@ -4,7 +4,7 @@
   "author": "Iban Benzal",
   "description": "Open Data Fair Rent for the UK",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node app.js"
   },
   "license": "MIT",
   "dependencies": {
