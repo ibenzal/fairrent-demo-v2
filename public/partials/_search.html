@@ -1,0 +1,22 @@
+﻿<div class="form-group">
+    <div class="col-sm-10">
+        <input type="text" class="form-control" id="address" placeholder="Address" ng-model="address" />
+    </div>
+</div>
+
+<div class="form-group">
+    <div class="col-sm-10">
+        <select type="select" class="form-control" id="type" placeholder="Property Type" ng-model="typeFlat">
+            <option value="F">Flat</option>
+            <option value="S">Semi-detached</option>
+            <option value="T">Terrace</option>
+            <option value="D">Detached</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+        <input type="submit" class="btn btn-primary" value="Search" ui-sref="viewFlat({postcode:address})" />
+    </div>
+</div>

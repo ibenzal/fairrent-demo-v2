@@ -1,0 +1,41 @@
+<div class="search">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <h2 class="col-xs-12 text-centered">FIND OUT YOUR FAIR RENT</h2>
+                    <div class="col-xs-offset-1 col-xs-5">
+                        <input type="text" class="form-control" id="address" placeholder="Postcode of the property?" ng-model="search.postcode" />
+                    </div>
+
+                    <div class="col-xs-5">
+                        <select class="form-control" id="type" placeholder="Type of the property?" ng-model="search.type">
+                            <option value="F" selected>Flat</option>
+                            <option value="S">Semi-detached</option>
+                            <option value="T">Terrace</option>
+                            <option value="D">Detached</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="flats container">
+    <div class="row">
+        <h2>Our Fair Rents!</h2>
+        <div class="col-sm-3 flat-article" ng-repeat="Flat in Flats | filter:search">
+            <div>
+                <div class="flat-info">
+                    {{Flat.paon}}<br/>
+                    {{Flat.saon}}<br />
+                    {{Flat.street}}<br />
+                    {{Flat.postcode}}<br />
+                    {{Flat.locality}}
+                </div>
+                <a class="btn btn-primary" ui-sref="viewFlat({id:Flat._id})">View</a>
+            </div>
+        </div>
+    </div>
+</div>
+

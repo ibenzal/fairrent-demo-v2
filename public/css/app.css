@@ -1,0 +1,116 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.top-buffer{
+    margin-top:10px;
+}
+
+.navbar-default{ 
+    background-color:#2B1B2E;
+    border-color: transparent;
+    border-radius: 0; 
+}
+
+.navbar-brand{
+    height:70px;
+}
+
+.navbar{
+    margin-bottom: 0!important;
+}
+
+.top-logo{
+    height:100%;
+}
+
+h2{
+    text-align:center;
+    text-decoration:underline;
+    margin:0;
+}
+
+h4{
+    color: #2B1B2E;
+    font-weight:600;
+}
+
+.search {
+    background-image: url('../resources/main-background.png');
+}
+.search > div{
+    background: rgba(42, 27, 46, .4);
+    padding: 30px 0;
+}
+.search .form-control{
+    margin-top: 25px;
+}
+
+.search h2{
+    color: white;
+}
+
+.flats{
+    padding: 30px 0;
+}
+.flats h2{
+    margin-bottom: 15px;
+}
+
+.flat-article{
+    padding: 15px;
+}
+
+.flat-article > div{
+    background-color:rgba(42, 27, 46, .4);
+    padding: 12px;
+    min-height:190px;
+}
+
+.flat-info{
+    color:#2B1B2E;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.flat-intro{
+    color:white;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.flat-article .btn{
+    color: #fff;
+    background-color: #F3A63F;
+    border-color: transparent;
+    margin-top: 10px;
+    border-radius: 0;
+}
+.flat-header{
+    background: orange;
+}
+.price-fairrent{
+   margin: 15px 0;   
+   background: rgba(42, 27, 46, .4);
+   padding-bottom: 15px;
+   
+}
+
+.price-fairrent > div{
+    padding: 15px;
+}
+
+.important
+{
+    text-decoration:underline;
+}
+
+select.flat-size{
+    display: inline;
+    width: 150px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}

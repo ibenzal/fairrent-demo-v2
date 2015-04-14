@@ -1,0 +1,35 @@
+<div class="flat-header">
+    <div style="background-image: url('http://maps.google.com/maps/api/staticmap?center={{Flat.postcode}}&zoom=14&size=1366x110&maptype=roadmap&markers=color:ORANGE|label:A|{{Flat.postcode}}&sensor=false');
+background-repeat: no-repeat;
+background-size: 100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 flat-article">
+                    <div class="flat-intro">
+                        The {{Flat.paon}} {{Flat.saon}} in {{Flat.street}} ({{Flat.postcode}}) bought in {{Flat.date}} for {{Flat.price}} pounds
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<img src="" style="float: right">
+<div class="flat-prices container">
+    <div class="row">
+        <div class="col-sm-8 price-fairrent">
+            <h3>Calculation</h3>
+            <div>
+            <h4>FairRent</h4>
+                <div class="flat-info">The fair rent to pay monthy for the flat is: <span class="important">{{Flat.fairRentPrice}} pounds.</span></div>
+            <h4>Average Price</h4>
+                <div class="flat-info">The average price in {{Flat.city}} is <span class="important">{{averageRent}} pounds </span> for a 
+                    <select class="form-control flat-size" id="type" ng-model="sizeFlat">
+                        <option ng-repeat="(size, price) in averageRentList" value="{{size}}">{{size}}</option>
+                    </select>
+                flat.
+                </div>
+        </div>
+    </div>
+</div>
+
+                <!--Other information:In 2014, the flat has a value of {{Flat.inflationPrice}}.-->
