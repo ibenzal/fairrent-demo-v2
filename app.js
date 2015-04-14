@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-var app            = express();
+var app = express();
 
 app.set('port', process.env.PORT || 3000);
 app.use(bodyParser.json());
@@ -22,11 +22,10 @@ mongoose.connect('mongodb://landlord:tenant@ds041167.mongolab.com:41167/fairrent
   } else {
     console.log('Connected to Database');
     }
-
+	app.listen(app.get('port'));
 });
 
 
-http.createServer(app).listen(app.get('port'), function() {
-//app.listen(app.get('port'), function() {
+/*http.createServer(app).listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
-});
+});*/
