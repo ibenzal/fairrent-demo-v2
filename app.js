@@ -22,10 +22,9 @@ mongoose.connect('mongodb://landlord:tenant@ds041167.mongolab.com:41167/fairrent
   } else {
     console.log('Connected to Database');
     }
-	app.listen(app.get('port'));
 });
 
 
-/*http.createServer(app).listen(app.get('port'), function() {
+http.createServer(app).listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
-});*/
+});
